@@ -1,5 +1,5 @@
 venv/
 data/
 models/*
-!models/pneumonia_cnn_model.keras
+!models/pneumonia_cnn.weights.h5
 __pycache__/
