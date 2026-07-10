@@ -1,11 +1,10 @@
-import streamlit as st
-import numpy as np
-from PIL import Image
-from tensorflow.keras.models import load_model
+import os
+
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "pneumonia_cnn_model.keras")
 
 @st.cache_resource
 def load_pneumonia_model():
-    return load_model('../models/pneumonia_cnn_model.keras')
+    return load_model(MODEL_PATH)
 
 model = load_pneumonia_model()
 
