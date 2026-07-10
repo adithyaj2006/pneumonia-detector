@@ -54,7 +54,7 @@ Notably, PNEUMONIA recall remained high (0.99) throughout — the model rarely m
 
 The trained CNN is served through a simple Streamlit interface: upload a chest X-ray image, and the app returns a prediction with a confidence score.
 
-*(Add a screenshot of your app here once deployed — drag an image into this README on GitHub, or reference a local file like `assets/app-screenshot.png`)*
+![App Screenshot](assets/app-screenshot.png)
 
 ---
 
@@ -120,6 +120,12 @@ streamlit run streamlit_app.py
 - Threshold tuning to better balance precision/recall on unseen data
 - Expand training data diversity to reduce distribution shift sensitivity
 - Add Grad-CAM visualizations to show which regions of the X-ray influenced each prediction
+
+---
+
+## 🖥️ Live Demo
+Try it here: https://pneumonia-detector-52kneffb5wtyptsmvyjyqp.streamlit.app/
+
 
 ---
 
